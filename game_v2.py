@@ -20,6 +20,7 @@ def score_game(random_predict) -> int:
     np.random.seed(1)
     random_array = np.random.randint(1, 101, size=(1000))
     
+    
     for number in random_array:
         count_ls.append(random_predict(number))
         
@@ -32,3 +33,6 @@ score_game(random_predict)
 
 if __name__ == '__main__':
     score_game(random_predict)
+    
+
+
